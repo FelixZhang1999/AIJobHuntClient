@@ -1,0 +1,17 @@
+/* App.css */
+.App {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.content {
+  max-width: 600px;
+  margin: auto;
+  padding: 1.25rem;
+}
+
+::placeholder {
+  color: lightgray;
+}

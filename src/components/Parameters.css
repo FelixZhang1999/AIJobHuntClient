@@ -1,0 +1,8 @@
+.home-component {
+    margin: 1rem 0;
+}
+
+.home-component span, input, select, textarea {
+    box-sizing: border-box;
+    font-size: 1rem;
+}

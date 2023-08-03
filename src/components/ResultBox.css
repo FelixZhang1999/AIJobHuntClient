@@ -1,0 +1,20 @@
+.home-result {
+    border: 1px solid #949494;
+    width: 100%;
+}
+
+.result-component {
+    padding-bottom: 2rem !important;
+}
+
+.result-component .result-key {
+    margin-left: 2rem;
+}
+
+.result-component .result-text {
+    color: #f1356d;
+}
+
+#result-url {
+    color: blue;
+}

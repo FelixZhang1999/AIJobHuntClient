@@ -1,0 +1,9 @@
+.data-list {
+    text-align: center;
+}
+
+.data-list h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
