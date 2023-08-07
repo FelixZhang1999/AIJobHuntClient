@@ -107,7 +107,7 @@ const Home = () => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(Object.fromEntries(resumeData))
         };
-        fetch('http://52.52.248.222/submit', requestOptions)
+        fetch('https://AIJobHuntLB-1115828705.us-west-1.elb.amazonaws.com/submit', requestOptions)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
@@ -130,7 +130,7 @@ const Home = () => {
                 <DataList title="Education" component={EduComponent} />
                 <DataList title="Experience" component={ExpComponent} />
                 <Parameters />
-                <button name="searchButton" id="search-button" type="submit">{buttonText}</button>
+                <button name="searchButton" id="common-button" type="submit">{buttonText}</button>
             </form>
             <span className="home-error" id="error-message">{errorMessage}</span>
             <ResultBox job={job}/>

@@ -6,6 +6,25 @@
   background-color: #ffffff;
 }
 
+.App button {
+  text-align: center;
+  margin-top: 0.6rem;
+  background: #ffffff;
+  border: 2px solid #949494;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.App button:hover {
+  background: #dfdfdf;
+}
+
+.App button:active {
+  box-shadow: 0 0 2px 1px #728FCE;
+}
+
 .content {
   max-width: 600px;
   margin: auto;
@@ -14,4 +33,22 @@
 
 ::placeholder {
   color: lightgray;
+}
+
+#common-button {
+  margin-top: 2rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 124, 124);
+  color: white;
+}
+
+#common-button:hover {
+  background: red;
+}
+
+#common-button:active {
+  box-shadow: 0 0 2px 4px #eee;
 }

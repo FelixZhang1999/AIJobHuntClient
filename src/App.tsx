@@ -30,16 +30,16 @@ export default function App() {
   const centerWidth = Math.min(windowSize[0], maxCenterWidth);
 
   return (
-    <Router>
       <div className="App" style={{ width: centerWidth }}>
         <Navbar />
         <div className='content'>
+        <Router>
           <Routes>
             <Route path="/"  element={<Home/>} />
             <Route path="/contact" element={<Contact/>} />
           </Routes>
+        </Router>
         </div>
       </div>
-    </Router>
   );
 }
