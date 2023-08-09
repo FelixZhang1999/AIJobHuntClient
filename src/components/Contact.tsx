@@ -19,7 +19,7 @@ const Contact = () => {
             body: JSON.stringify(Object.fromEntries(suggestion))
         };
         console.log(JSON.stringify(Object.fromEntries(suggestion)));
-        fetch('https://AIJobHuntLB-1115828705.us-west-1.elb.amazonaws.com/sendsuggestion', requestOptions)
+        fetch('https://aijobhunt.xyz/api/sendsuggestion', requestOptions)
             .then(() => {
                 setSubmitText("Send suggestion!")
                 e.target.suggestionButton.disabled = false;

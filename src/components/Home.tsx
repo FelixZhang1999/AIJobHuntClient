@@ -107,7 +107,7 @@ const Home = () => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(Object.fromEntries(resumeData))
         };
-        fetch('https://AIJobHuntLB-1115828705.us-west-1.elb.amazonaws.com/submit', requestOptions)
+        fetch('https://aijobhunt.xyz/api/submit', requestOptions)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
