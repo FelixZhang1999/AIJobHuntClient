@@ -9,8 +9,6 @@ const ResultBox = (props: resultProps) => {
     return (
         <div className="result-component component">
             <br />
-            <span>Result</span>
-            <br /><br />
             <span className="result-key">Title: </span>
             <span className="result-text" id="result-title">{props.job["title"]}</span>
             <br /><br />

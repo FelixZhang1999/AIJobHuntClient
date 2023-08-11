@@ -133,6 +133,7 @@ const Home = () => {
                 <button name="searchButton" id="common-button" type="submit">{buttonText}</button>
             </form>
             <span className="home-error" id="error-message">{errorMessage}</span>
+            <h3>Result</h3>
             <ResultBox job={job}/>
         </div>
     );

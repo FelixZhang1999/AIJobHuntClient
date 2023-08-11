@@ -6,25 +6,6 @@
   background-color: #ffffff;
 }
 
-.App button {
-  text-align: center;
-  margin-top: 0.6rem;
-  background: #ffffff;
-  border: 2px solid #949494;
-  padding: 0.5rem 1rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.App button:hover {
-  background: #dfdfdf;
-}
-
-.App button:active {
-  box-shadow: 0 0 2px 1px #728FCE;
-}
-
 .content {
   max-width: 600px;
   margin: auto;

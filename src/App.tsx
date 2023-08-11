@@ -1,11 +1,22 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Amplify } from 'aws-amplify';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Login from "./components/Login"
+import awsExports from './aws-exports';
 import './App.css';
 
 export default function App() {
+  Amplify.configure({
+      Auth: {
+          region: awsExports.REGION,
+          userPoolId: awsExports.USER_POOL_ID,
+          userPoolWebClientId: awsExports.USER_POOL_APP_CLIENT_ID
+      }
+  })
+
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight,
@@ -37,6 +48,7 @@ export default function App() {
           <Routes>
             <Route path="/"  element={<Home/>} />
             <Route path="/contact" element={<Contact/>} />
+            <Route path="/login" element={<Login/>}/>
           </Routes>
         </Router>
         </div>
