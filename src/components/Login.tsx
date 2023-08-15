@@ -1,4 +1,4 @@
-import { Authenticator, Heading, useTheme } from '@aws-amplify/ui-react';
+import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import './Login.css';
 
